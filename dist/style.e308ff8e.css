@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   background: #fff;
@@ -14,23 +15,18 @@ body {
 
 ul {
   list-style: none;
-  color: #333;
 }
 
 .btn {
-  color: #333;
   text-decoration: none;
-}
-
-h1,
-h2 {
-  font-weight: 300;
-  line-height: 1.2;
 }
 
 p {
   margin: 10px 0;
+  font-weight: 300;
+  line-height: 1.2;
 }
+
 img {
   width: 100%;
 }
@@ -38,10 +34,11 @@ img {
 /* Navbar */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: Black;
+  background-color: rgb(36, 36, 36);
+  color: #fff;
   opacity: 0.8;
   width: 100%;
   position: fixed;
@@ -49,20 +46,54 @@ img {
   padding: 0 30px;
 }
 
+.navbar {
+  z-index: 10;
+}
+
 .navbar a {
-  color: rgb(17, 17, 17);
+  color: #fff;
   padding: 10px 20px;
   margin: 5px;
+  text-decoration: none;
 }
 
 .navbar a:hover {
   border-bottom: #28a745 2px solid;
+  background-color: rgb(128, 128, 128);
 }
+
+.navbar a:hover {
+  transition: 0.5s;
+}
+
 .navbar ul {
   display: flex;
 }
+
 .navbar .logo {
   font-weight: 400;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  display: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.hamburger i:hover {
+  border-bottom: #28a745 2px solid;
+  background-color: gray;
+}
+
+.hamburger i:hover {
+  transition: 0.5s;
 }
 
 /* Header */
@@ -75,26 +106,6 @@ img {
   height: 100vh;
   position: relative;
   color: #fff;
-}
-
-.hero .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  padding: 0 20px;
-}
-
-.hero .content h1 {
-  font-size: 25px;
-}
-
-.hero .content p {
-  font-size: 15px;
-  max-width: 600px;
-  margin: 20px 0 30px;
 }
 
 .hero::before {
@@ -111,46 +122,58 @@ img {
   z-index: 10;
 }
 
-/* about */
+/* Home */
 
-.hero .about {
+.hero .homeContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 100%;
-  padding: 20px 20px;
 }
 
-.hero .aboutUS h2 {
-  font-size: 40px;
+.hero .home p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 400;
+}
+
+.hero .home h1 {
+  font-size: 15px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+  font-weight: 50;
+}
+
+/* Contact */
+
+.hero .contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.hero .contact h2 {
+  font-size: 25px;
   max-width: 600px;
   margin: auto;
   font-weight: 500;
 }
 
-.hero .aboutUs hr {
-  overflow: visible; /* For IE */
-  height: 30px;
-  border-style: solid;
-  border-color: #fff;
-  border-width: 1px 0 0 0;
-  border-radius: 20px;
+.hero .contact p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+  font-weight: 400;
 }
 
-.hero .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  padding: 100px;
-}
-
-.hero .getIntouch hr {
-  overflow: visible; /* For IE */
+.hero .contact hr {
+  overflow: visible;
   height: 30px;
   border-style: solid;
   border-color: #fff;
@@ -160,6 +183,142 @@ img {
 
 a {
   color: #fff;
+}
+
+/* about */
+
+.hero .aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.hero .about h2 {
+  font-size: 25px;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.hero .about p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+  font-weight: 400;
+}
+
+.hero .about hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+/* login */
+
+.hero .loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.hero .login h2 {
+  font-size: 25px;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.hero .login hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+.hero #btn-login {
+  margin-top: 30px;
+}
+
+/* Register */
+
+.hero .register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 100px;
+  line-height: 2.5;
+}
+
+.hero .register h2 {
+  font-size: 25px;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.hero .register hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+.hero .registerGroup {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  margin: 10px 15px;
+}
+
+/* max-width 800px */
+
+@media screen and (max-width: 800px) {
+  .navbar ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar ul.show {
+    display: flex;
+  }
+  .navbar a:hover {
+    border: #28a745 1px solid;
+    border-radius: 10px;
+    padding: 5px 5px;
+  }
+
+  .navbar a:hover {
+    transition: 0.8s;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .btn {
+    width: 100%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .navbar {
+    padding: 0px;
+  }
 }
 
 

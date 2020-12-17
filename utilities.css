@@ -11,7 +11,7 @@
 .btn {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 5px 15px;
   color: #fff;
   background-color: #28a745;
   border-radius: 5px;
@@ -21,19 +21,22 @@
   opacity: 0.9;
 }
 
-.btn-primary {
+/* .btn-primary {
   background: #28a745;
   color: #fff;
 }
+
 .btn-secondary {
   background: #0284d0;
   color: #fff;
 }
+
 .btn-dark {
   background: #333;
   color: #fff;
 }
+
 .btn-light {
   background: #f4f4f4;
   color: #fff;
-}
+} */
