@@ -14,7 +14,7 @@ export default () => `
       players, <br> that are in your data base, by simply typing the name of
       tournament.
     </p>
-    <a class="btn" href="./register.html">Get Started!</a>
+    <a class="btn" href="/Register" data-navigo">Get Started!</a>
   </div>
 </section>
 </div>

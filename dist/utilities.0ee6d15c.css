@@ -15,10 +15,15 @@
   color: #fff;
   background-color: #28a745;
   border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .btn:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 /* .btn-primary {

@@ -2,7 +2,7 @@ export default () => `
 <div class="hero">
 <section class="registerContainer">
   <div class="register">
-  <form id="register-form" class="form" action="" method="post">
+  <form id="my-form" class="form" action="https://formspree.io/f/mdoplolp" method="POST">
   <h2>SignUp Form !</h2>
   <br>
   <hr class="horizontalLine">
@@ -49,11 +49,11 @@ export default () => `
           </label>
           <div class="clear"></div>
         </div>
-        <a href="/Login" class="btn" id="btn-login">
-        <i class="fas.fa-chevron-right"></i>Sign up !</a>
+        <button class="btn" type="submit">Sign Up !</button>
+        <div id="status"></div>
       <p>
         Already have an Account?
-        <a href="./login.html" class="signUp"> Sign Up !</a>
+        <a href="/Login" data-navigo class="signUp"> login !</a>
       </p>
     </div>
     </form>

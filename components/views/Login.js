@@ -2,11 +2,11 @@ export default () => `
 <div class="hero">
 <section class="loginContainer">
   <div class="login">
-    <form id="login-form" class="form" action="" method="post">
+    <form id="my-form" class="form" action="https://formspree.io/f/mdoplolp" method="POST">
       <h2>Login !</h2>
       <br>
       <hr class="horizontalLine"> 
-      <div class="form-group">
+      <div class="loginGroup">
         <label for="username" class="text-info">Username:</label>
         <br>
           <input
@@ -17,7 +17,7 @@ export default () => `
             placeholder ="Username"
             required/>
       </div>
-      <div class="form-group">
+      <div class="loginGroup">
         <label for="password" class="text-info">Password:</label>
         <br>
           <input
@@ -38,13 +38,10 @@ export default () => `
             type="checkbox"/>
         </span>
         </label>
-        <br>
-        <a href="/Login" class="btn" id="btn-login">
-        <i class="fas.fa-chevron-right"></i>Login !</a>
-        </div>
-        <div id="register-link" class="text-right">
-        <a href="./register.html" class="text-info">Register here</a>
       </div>
+        <br>
+        <button class="btn" type="submit">Submit</button>
+        <div id="status"></div>
     </form>
   </div>
 </section>

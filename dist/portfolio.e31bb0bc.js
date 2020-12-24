@@ -141,7 +141,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<div class=\"hero\">\n<section class=\"aboutContainer\" id=\"\">\n  <div class=\"about\">\n    <h2> About us !</h2>\n    <br>\n    <hr class=\"horizontalLine\">\n    <p>\n      This recruiting app is built to increase your productivity. <br> As a\n      collegiate soccer coach, for the past 8 years, <br> the recruiting\n      planning has been the most difficult and laborious part of my job. <br> I\n      decided to create this app so i can enjoy talking and watching the\n      best talent in the country. <br> This app will allow you to search the\n      players, <br> that are in your data base, by simply typing the name of\n      tournament.\n    </p>\n    <a class=\"btn\" href=\"./register.html\">Get Started!</a>\n  </div>\n</section>\n</div>\n";
+  return "\n<div class=\"hero\">\n<section class=\"aboutContainer\" id=\"\">\n  <div class=\"about\">\n    <h2> About us !</h2>\n    <br>\n    <hr class=\"horizontalLine\">\n    <p>\n      This recruiting app is built to increase your productivity. <br> As a\n      collegiate soccer coach, for the past 8 years, <br> the recruiting\n      planning has been the most difficult and laborious part of my job. <br> I\n      decided to create this app so i can enjoy talking and watching the\n      best talent in the country. <br> This app will allow you to search the\n      players, <br> that are in your data base, by simply typing the name of\n      tournament.\n    </p>\n    <a class=\"btn\" href=\"/Register\" data-navigo\">Get Started!</a>\n  </div>\n</section>\n</div>\n";
 };
 
 exports.default = _default;
@@ -180,7 +180,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<div class=\"hero\">\n<section class=\"loginContainer\">\n  <div class=\"login\">\n    <form id=\"login-form\" class=\"form\" action=\"\" method=\"post\">\n      <h2>Login !</h2>\n      <br>\n      <hr class=\"horizontalLine\"> \n      <div class=\"form-group\">\n        <label for=\"username\" class=\"text-info\">Username:</label>\n        <br>\n          <input\n            type=\"text\"\n            name=\"username\"\n            id=\"username\"\n            class=\"form-control\"\n            placeholder =\"Username\"\n            required/>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"password\" class=\"text-info\">Password:</label>\n        <br>\n          <input\n            type=\"text\"\n            name=\"password\"\n            id=\"password\"\n            class=\"form-control\"\n            placeholder =\"Password\"\n            required />\n      </div>\n      <div class=\"remember\">\n        <label for=\"remember-me\">\n        <span>Remember me</span>\xA0\n        <span>\n          <input\n            id=\"remember-me\"\n            name=\"remember-me\"\n            type=\"checkbox\"/>\n        </span>\n        </label>\n        <br>\n        <a href=\"/Login\" class=\"btn\" id=\"btn-login\">\n        <i class=\"fas.fa-chevron-right\"></i>Login !</a>\n        </div>\n        <div id=\"register-link\" class=\"text-right\">\n        <a href=\"./register.html\" class=\"text-info\">Register here</a>\n      </div>\n    </form>\n  </div>\n</section>\n</div>";
+  return "\n<div class=\"hero\">\n<section class=\"loginContainer\">\n  <div class=\"login\">\n    <form id=\"my-form\" class=\"form\" action=\"https://formspree.io/f/mdoplolp\" method=\"POST\">\n      <h2>Login !</h2>\n      <br>\n      <hr class=\"horizontalLine\"> \n      <div class=\"loginGroup\">\n        <label for=\"username\" class=\"text-info\">Username:</label>\n        <br>\n          <input\n            type=\"text\"\n            name=\"username\"\n            id=\"username\"\n            class=\"form-control\"\n            placeholder =\"Username\"\n            required/>\n      </div>\n      <div class=\"loginGroup\">\n        <label for=\"password\" class=\"text-info\">Password:</label>\n        <br>\n          <input\n            type=\"text\"\n            name=\"password\"\n            id=\"password\"\n            class=\"form-control\"\n            placeholder =\"Password\"\n            required />\n      </div>\n      <div class=\"remember\">\n        <label for=\"remember-me\">\n        <span>Remember me</span>\xA0\n        <span>\n          <input\n            id=\"remember-me\"\n            name=\"remember-me\"\n            type=\"checkbox\"/>\n        </span>\n        </label>\n      </div>\n        <br>\n        <button class=\"btn\" type=\"submit\">Submit</button>\n        <div id=\"status\"></div>\n    </form>\n  </div>\n</section>\n</div>";
 };
 
 exports.default = _default;
@@ -193,7 +193,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _default = function _default() {
-  return "\n<div class=\"hero\">\n<section class=\"registerContainer\">\n  <div class=\"register\">\n  <form id=\"register-form\" class=\"form\" action=\"\" method=\"post\">\n  <h2>SignUp Form !</h2>\n  <br>\n  <hr class=\"horizontalLine\">\n  <div class=\"registerGroup\">\n  <label for=\"email\" class=\"text-info\">Email:</label>\n      <input\n      class=\"text email\"\n      type=\"email\"\n      name=\"email\"\n      placeholder=\"Email\"\n      required />\n    </div>\n    <div class=\"registerGroup\">\n    <label for=\"username\" class=\"text-info\">Username:</label>\n        <input\n          class=\"text\"\n          type=\"text\"\n          name=\"Username\"\n          placeholder=\"Username\"\n          required />\n    </div>\n    <div class=\"registerGroup\">\n    <label for=\"email\" class=\"text-info\">Password:</label>\n        <input\n          class=\"text\"\n          type=\"password\"\n          name=\"password\"\n          placeholder=\"Password\"\n          required= />\n    </div>\n    <div class=\"registerGroup\">\n    <label for=\"email\" class=\"text-info\">Confirm Password:</label>\n        <input\n          class=\"text w3lpass\"\n          type=\"password\"\n          name=\"password\"\n          placeholder=\"Confirm Password\"\n          required= />\n      </div>\n        <div class=\"agreeTerm\">\n          <label class=\"anim\">\n            <input type=\"checkbox\" class=\"checkbox\" required=\"\" />\n            <span>I Agree To The Terms & Conditions</span>\n          </label>\n          <div class=\"clear\"></div>\n        </div>\n        <a href=\"/Login\" class=\"btn\" id=\"btn-login\">\n        <i class=\"fas.fa-chevron-right\"></i>Sign up !</a>\n      <p>\n        Already have an Account?\n        <a href=\"./login.html\" class=\"signUp\"> Sign Up !</a>\n      </p>\n    </div>\n    </form>\n  </div>\n</section>\n</div>";
+  return "\n<div class=\"hero\">\n<section class=\"registerContainer\">\n  <div class=\"register\">\n  <form id=\"my-form\" class=\"form\" action=\"https://formspree.io/f/mdoplolp\" method=\"POST\">\n  <h2>SignUp Form !</h2>\n  <br>\n  <hr class=\"horizontalLine\">\n  <div class=\"registerGroup\">\n  <label for=\"email\" class=\"text-info\">Email:</label>\n      <input\n      class=\"text email\"\n      type=\"email\"\n      name=\"email\"\n      placeholder=\"Email\"\n      required />\n    </div>\n    <div class=\"registerGroup\">\n    <label for=\"username\" class=\"text-info\">Username:</label>\n        <input\n          class=\"text\"\n          type=\"text\"\n          name=\"Username\"\n          placeholder=\"Username\"\n          required />\n    </div>\n    <div class=\"registerGroup\">\n    <label for=\"email\" class=\"text-info\">Password:</label>\n        <input\n          class=\"text\"\n          type=\"password\"\n          name=\"password\"\n          placeholder=\"Password\"\n          required= />\n    </div>\n    <div class=\"registerGroup\">\n    <label for=\"email\" class=\"text-info\">Confirm Password:</label>\n        <input\n          class=\"text w3lpass\"\n          type=\"password\"\n          name=\"password\"\n          placeholder=\"Confirm Password\"\n          required= />\n      </div>\n        <div class=\"agreeTerm\">\n          <label class=\"anim\">\n            <input type=\"checkbox\" class=\"checkbox\" required=\"\" />\n            <span>I Agree To The Terms & Conditions</span>\n          </label>\n          <div class=\"clear\"></div>\n        </div>\n        <button class=\"btn\" type=\"submit\">Sign Up !</button>\n        <div id=\"status\"></div>\n      <p>\n        Already have an Account?\n        <a href=\"/Login\" data-navigo class=\"signUp\"> login !</a>\n      </p>\n    </div>\n    </form>\n  </div>\n</section>\n</div>";
 };
 
 exports.default = _default;
@@ -19692,6 +19692,48 @@ var navUL = document.querySelector("#navbar ul");
 hamburger.addEventListener("click", function () {
   navUL.classList.toggle("show");
 });
+window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
+  var form = document.getElementById("my-form"); // var button = document.getElementById("my-form-button");
+
+  var status = document.getElementById("status"); // Success and Error functions for after the form is submitted
+
+  function success() {
+    form.reset();
+    status.classList.add("success");
+    status.innerHTML = "Thanks!";
+  }
+
+  function error() {
+    status.classList.add("error");
+    status.innerHTML = "Oops! There was a problem.";
+  } // handle the form submission event
+
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });
+}); // helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+
+  xhr.send(data);
+}
 },{"./components":"components/index.js","./store":"store/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -19720,7 +19762,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61097" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60648" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

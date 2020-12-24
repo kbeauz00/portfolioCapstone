@@ -246,8 +246,13 @@ a {
   border-radius: 20px;
 }
 
-.hero #btn-login {
-  margin-top: 30px;
+.loginGroup {
+  width: 100%;
+  margin-top: 0px;
+}
+.loginGroup input {
+  width: 100%;
+  padding: 5px;
 }
 
 /* Register */
@@ -277,13 +282,15 @@ a {
   border-color: #fff;
   border-width: 1px 0 0 0;
   border-radius: 20px;
+  width: 100%;
 }
 
-.hero .registerGroup {
+.registerGroup {
   display: flex;
   height: 30px;
   justify-content: space-between;
   margin: 10px 15px;
+  width: 93%;
 }
 
 /* max-width 800px */
@@ -318,6 +325,39 @@ a {
   }
   .navbar {
     padding: 0px;
+  }
+}
+
+#status {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0px;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color: #28a745;
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(245, 25, 25);
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
