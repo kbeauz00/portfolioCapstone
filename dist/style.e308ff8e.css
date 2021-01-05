@@ -293,6 +293,85 @@ a {
   width: 93%;
 }
 
+/* PlayerRegistration */
+
+.hero .playerRegisterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 100px;
+  line-height: 2.5;
+}
+.hero .playerRegister h2 {
+  font-size: 25px;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.hero .playerRegister hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.registerGroup {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  margin: 10px 15px;
+  width: 93%;
+}
+
+/* Player */
+
+.hero .playerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.hero .player h2 {
+  font-size: 25px;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.hero .player hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.hero.tableGroup {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  margin: 10px 30px;
+  width: 93%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #2b352d;
+}
+
 /* max-width 800px */
 
 @media screen and (max-width: 800px) {

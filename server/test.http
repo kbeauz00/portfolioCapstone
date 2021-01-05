@@ -1,0 +1,26 @@
+POST http://localhost:5000/players
+Content-Type: application/json
+
+# {
+#     "email": "kahlalain@hotmail.com",
+#     "username": "kbeauz00",
+#     "password": "rez123"
+# }
+
+
+# {
+#     "email": "gjjjgfhjfjjkfgbfi@hotmail.com",
+#     "username": "g2555zjhgggzfgj555r443",    
+#     "password" : "336uggjxjgk3"
+# }
+
+
+{
+   "Name": "hohhes ", 
+   "Email": "hhoe@hotmail.com", 
+   "Phone": "700-556-9736",
+   "Club": "rs",
+   "Tournament": ["ho", "jp"],
+   "Position": ["ji", "er"],
+   "GraduationYear": "2029"
+}

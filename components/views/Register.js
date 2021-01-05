@@ -2,8 +2,8 @@ export default () => `
 <div class="hero">
 <section class="registerContainer">
   <div class="register">
-  <form id="my-form" class="form" action="https://formspree.io/f/mdoplolp" method="POST">
-  <h2>SignUp Form !</h2>
+  <form id="my-form" class="form" action method="POST"> 
+  <h2>SignUp Form !</h2> 
   <br>
   <hr class="horizontalLine">
   <div class="registerGroup">
@@ -20,8 +20,8 @@ export default () => `
         <input
           class="text"
           type="text"
-          name="Username"
-          placeholder="Username"
+          name="username"
+          placeholder="User Name"
           required />
     </div>
     <div class="registerGroup">
@@ -38,7 +38,7 @@ export default () => `
         <input
           class="text w3lpass"
           type="password"
-          name="password"
+          name="passwordCheck"
           placeholder="Confirm Password"
           required= />
       </div>
@@ -49,7 +49,7 @@ export default () => `
           </label>
           <div class="clear"></div>
         </div>
-        <button class="btn" type="submit">Sign Up !</button>
+        <button class="btn" name="submit" type="submit">Sign Up !</button> 
         <div id="status"></div>
       <p>
         Already have an Account?

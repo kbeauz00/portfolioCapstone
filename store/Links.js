@@ -3,5 +3,7 @@ export default [
   { title: "Contact", text: "Contact" },
   { title: "About", text: "About" },
   { title: "Login", text: "Login" },
-  { title: "Register", text: "Register" },
+  { title: "Register", text: "Coach/Registration" },
+  { title: "RegisterP", text: "Player/Registration" },
+  { title: "Player", text: "Players" },
 ];
