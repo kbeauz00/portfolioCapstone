@@ -4,9 +4,13 @@ const mongoose = require("mongoose");
 const Player = require("../models/player");
 
 router.post("/", (request, response) => {
-  const newPlayer = new Player.model(request.body);
-  newPlayer.save((err, player) => {
-    return err ? response.sendStatus(500).json(err) : response.json(player);
+  Player.model.countDocuments({}, (err, count) => {
+    request.body.uid = count;
+    const data = { ...request.body };
+    const newPlayer = new Player.model(data);
+    newPlayer.save((err, player) => {
+      return err ? response.sendStatus(500).json(err) : response.json(player);
+    });
   });
 });
 

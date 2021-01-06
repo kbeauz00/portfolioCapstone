@@ -70,6 +70,7 @@ function addNavEventListeners() {
 }
 
 function addEventListenersByView(st) {
+  console.log(st);
   if (st.view === "RegisterP") {
     document.querySelector("form").addEventListener("submit", (event) => {
       event.preventDefault();
@@ -94,48 +95,54 @@ function addEventListenersByView(st) {
           console.log("It puked", error);
         });
     });
+  } else if (st.view === "Register") {
+    document.querySelector("form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const inputList = event.target.elements;
+
+      const requestData = {
+        email: inputList.email.value,
+        username: inputList.username.value,
+        password: inputList.password.value,
+      };
+
+      axios.post(`${API_URL}/users`, requestData).then((response) => {
+        console.log(response);
+        router.navigate("/Login");
+      });
+    });
+    // .catch((error) => {
+    //   console.log("It puked", error);
+    // });
   }
 }
 
-// if (st.view === "Login") {
-//   document.querySelector("form").addEventListener("submit", (event) => {
-//     event.preventDefault();
-//     const inputList = event.target.elements;
+// function addEventListenersByView(st) {
+//   if (st.view === "Login") {
+//     document
+//       .querySelector("form")
+//       .addEventListener("submit", (event) => {
+//         event.preventDefault();
+//         const inputList = event.target.elements;
 
-//     const attempt = 3; // Variable to count number of attempts.
-//     // Below function Executes on click of login button.
-//     function validate() {
-//       const username = document.getElementById("username").value;
-//       const password = document.getElementById("password").value;
-//       if (username == "Formget" && password == "formget#123") {
-//         alert("Login successfully");
-//         window.location = "success.html"; // Redirecting to other page.
-//         return false;
-//       } else {
-//         attempt--; // Decrementing by one.
-//         alert("You have left " + attempt + " attempt;");
-//         // Disabling fields after 3 attempts.
-//         if (attempt == 0) {
-//           document.getElementById("username").disabled = true;
-//           document.getElementById("password").disabled = true;
-//           document.getElementById("submit").disabled = true;
-//           return false;
-//         }
-//       }
-//     }
-//     axios
-//       .post(`${API_URL}/players`, requestData)
-//       .then((response) => {
-//         state.Player.players.push(response.data);
-//         router.navigate("/Player");
+//         const requestData = {
+//           username: inputList.username,
+//           password: inputList.password,
+//         };
+
+//         axios.post(`${API_URL}/users`, requestData);
+//         // .then((response) => {
+//         //   state.Player.players.push(response.data);
+//         router.navigate("/RegisterP");
 //       })
 //       .catch((error) => {
 //         console.log("It puked", error);
 //       });
-//   });
+//   }
 // }
 
 function fetchDataByView(st = state.Home) {
+  console.log(st);
   switch (st.view) {
     case "Player":
       axios

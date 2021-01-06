@@ -2,7 +2,7 @@ export default () => `
 <div class="hero">
 <section class="registerContainer">
   <div class="register">
-  <form id="my-form" class="form" action method="POST"> 
+  <form id="my-form" class="form" action="" method="POST"> 
   <h2>SignUp Form !</h2> 
   <br>
   <hr class="horizontalLine">
@@ -49,7 +49,8 @@ export default () => `
           </label>
           <div class="clear"></div>
         </div>
-        <button class="btn" name="submit" type="submit">Sign Up !</button> 
+        <input type="submit" class="btn" name="submit" value="Register User">
+
         <div id="status"></div>
       <p>
         Already have an Account?

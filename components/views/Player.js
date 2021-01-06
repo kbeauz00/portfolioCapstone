@@ -6,7 +6,7 @@ export default (st) => `
 <br>
 <hr class="horizontalLine"> 
 <div class="tableGroup">
-<table id="table">
+<table class="table" id="table">
 <tr>
 <th>Number</th>
 <th>Name</th>
@@ -20,7 +20,7 @@ ${st.players
   .map((player) => {
     return `
     <tr>
-    <td>${player.Number}</td>
+    <td>${player.uid}</td>
     <td>${player.Name}</td>
     <td>${player.Email}</td>
     <td>${player.Club}</td>

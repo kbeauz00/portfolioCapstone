@@ -39,8 +39,8 @@ export default () => `
         </span>
         </label>
       </div>
-        <br>
-        <button class="btn" name="submit" id="submit" type="submit">Submit</button>
+        <br>              
+        <input type="submit" class="btn" name="submit" value="Submit">
         <div id="status"></div>
     </form>
   </div>

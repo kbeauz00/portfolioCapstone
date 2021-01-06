@@ -30,7 +30,7 @@ export default () => `
     <label for="gradYear">HS GradYear:</label>
     <input type="text" name="gradYear" id="gradYear" placeholder="Enter HS Graduation Year" required>
   </div>
-  <input type="submit" class="btn" name="submit" onclick="createTable() value="Register Player">
+  <input type="submit" class="btn" name="submit" value="Register Player">
 </form>
 </div>
 </section>

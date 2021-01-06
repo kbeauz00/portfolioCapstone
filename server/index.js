@@ -3,9 +3,8 @@ const colors = require("colors");
 const bodyParser = require("body-Parser");
 const mongoose = require("mongoose");
 const players = require("./controllers/players");
-const registerPlayers = require("./controllers/registerPlayers");
 const users = require("./controllers/users");
-const auth = require("./controllers/auth");
+const registerPlayers = require("./controllers/registerPlayers");
 const dotenv = require("dotenv");
 const app = express();
 
@@ -36,7 +35,7 @@ app.use(logging);
 
 dotenv.config();
 
-const DB_CONNECT = process.env.DB_CONNECT || "mongodb://localhost/player";
+const DB_CONNECT = process.env.DB_CONNECT || "mongodb://localhost/players";
 
 //data stuff
 mongoose.connect(DB_CONNECT, () => console.log("Database connected"));
@@ -57,6 +56,7 @@ app.route("/").get((request, response) => {
 app.get("/status", (request, response) => {
   response.send(JSON.stringify({ message: "Service running ok" }));
 });
+
 app
   .route("/posts")
   .get((request, response) => {
@@ -77,9 +77,9 @@ app
     response.json(request);
   });
 
+//Routes
 app.use("/players", players);
 app.use("/registerPlayers", registerPlayers);
-app.use("/auth", auth);
 app.use("/users", users);
 
 const PORT = process.env.PORT || 5000;
