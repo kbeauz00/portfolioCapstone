@@ -5,7 +5,7 @@ const Player = require("../models/player");
 
 router.post("/", (request, response) => {
   Player.model.countDocuments({}, (err, count) => {
-    request.body.uid = count;
+    request.body.uid = count + 1;
     const data = { ...request.body };
     const newPlayer = new Player.model(data);
     newPlayer.save((err, player) => {
@@ -50,8 +50,9 @@ router.put("/:id", (request, response) => {
 });
 
 router.delete("/:id", (request, response) => {
-  Player.model.findByIdAndRemove(request.params.id, {}, (error, data) => {
-    if (error) return response.sendStatus(500).json(error);
+  Player.model.findByIdAndRemove(request.params.id, {}, (err, data) => {
+    console.log(data);
+    if (err) return response.sendStatus(500).json(error);
     return response.json(data);
   });
 });

@@ -1,12 +1,12 @@
 export default () => `
 <div class="hero">
 <section class="registerContainer">
-  <div class="register">
+  <div class="CoachRegister">
   <form id="my-form" class="form" action="" method="POST"> 
-  <h2>SignUp Form !</h2> 
+  <h2>Sign Up Form !</h2> 
   <br>
   <hr class="horizontalLine">
-  <div class="registerGroup">
+  <div class="CoachRegisterGroup">
   <label for="email" class="text-info">Email:</label>
       <input
       class="text email"
@@ -15,7 +15,7 @@ export default () => `
       placeholder="Email"
       required />
     </div>
-    <div class="registerGroup">
+    <div class="CoachRegisterGroup">
     <label for="username" class="text-info">Username:</label>
         <input
           class="text"
@@ -24,7 +24,7 @@ export default () => `
           placeholder="User Name"
           required />
     </div>
-    <div class="registerGroup">
+    <div class="CoachRegisterGroup">
     <label for="email" class="text-info">Password:</label>
         <input
           class="text"
@@ -33,7 +33,7 @@ export default () => `
           placeholder="Password"
           required= />
     </div>
-    <div class="registerGroup">
+    <div class="CoachRegisterGroup">
     <label for="email" class="text-info">Confirm Password:</label>
         <input
           class="text w3lpass"
@@ -49,12 +49,12 @@ export default () => `
           </label>
           <div class="clear"></div>
         </div>
-        <input type="submit" class="btn" name="submit" value="Register User">
+        <input type="submit" class="btn" id="coachRegisterUser" name="submit" value="Coach Registration">
 
         <div id="status"></div>
       <p>
         Already have an Account?
-        <a href="/Login" data-navigo class="signUp"> login !</a>
+        <a href="/Login" data-navigo id="coachRegisterBtn"class="signUp btn"> login !</a>
       </p>
     </div>
     </form>

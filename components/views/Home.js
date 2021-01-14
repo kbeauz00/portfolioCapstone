@@ -8,9 +8,7 @@ export default () => `
     and turn them into the best team we can."
   </p>
   <h1>- Kirby Smart</h1>
-  <a href="/Login" data-navigo class="btn"
-    ><i class="fas.fa-chevron-right"></i>Login !</a
-  >
+  <a class="btn" href="/Register" data-navigo">Get Started!</a>
 </div>
 </section>
 </div>

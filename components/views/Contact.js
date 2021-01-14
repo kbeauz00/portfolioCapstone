@@ -2,23 +2,41 @@ export default () => `
 <div class="hero">
 <section class="contactContainer" id="">
 <div class="contact">
-  <h2>Let's Get In Touch!</h2>
-  <br>
+  <form action="https://formspree.io/f/moqpyppy" method="POST" id="my-form">
+  <h2>Contact Form !</h2>
+ 
   <hr class="horizontalLine">
-  <p>
-    Ready to start your next recruiting with us? Give us a call or
-    send us an email and we will get back to you as soon as possible!
-  </p>
+
+  <div class="contactBlockWide">
+
+    <div class="contactBlock">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+    </div>
+
+    <div class="contactBlock">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+    </div>
 </div>
-<br>
-<div class="phoneIcon">
-  <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-  <a class="" href=""></a>
-<div> +1 (954) 123-4567</div>
-</div>
-<div class="emailContact">
-  <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-  <a class="" href="./contact.html">kahlalain@hotmail.com</a>
+
+
+  <div class="contactBlockWide">
+    <label for="email">Email</label>
+    <input type="email" id="e_mail" name="_replyto" placeholder="Email" required>
+  </div>
+
+  <div class="contactBlockWide">
+  <label for="subject">Subject/Reason</label>
+    <textarea id="subject" name="message" placeholder="Write Something" style="height:50px"></textarea>
+  </div>
+
+  <div class="contactBlockWide">
+    <input type="submit" class="btn" value="Send">
+  </div>
+  </form>
+  <div id="status"></div>
 </div>
 </section>
+<script> src="./index.js"></script>
 </div>`;

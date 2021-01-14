@@ -3,8 +3,8 @@ const router = express.Router();
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const passport = require("passport");
-//register post handle
 
+//register post handle
 router.post("/", (request, response) => {
   User.model.countDocuments({}, (err, count) => {
     request.body.uid = count;

@@ -4,6 +4,7 @@ const bodyParser = require("body-Parser");
 const mongoose = require("mongoose");
 const players = require("./controllers/players");
 const users = require("./controllers/users");
+const logins = require("./controllers/logins");
 const registerPlayers = require("./controllers/registerPlayers");
 const dotenv = require("dotenv");
 const app = express();
@@ -44,7 +45,7 @@ mongoose.connect(DB_CONNECT, () => console.log("Database connected"));
 //   useUnifiedTopology: true,
 //   useFindAndModify: false,
 // });
-
+mongoose.set("useFindAndModify", false);
 const db = mongoose.connection;
 
 let db_status = "MongoDB connection not successful.";
@@ -81,6 +82,7 @@ app
 app.use("/players", players);
 app.use("/registerPlayers", registerPlayers);
 app.use("/users", users);
+app.use("/logins", logins);
 
 const PORT = process.env.PORT || 5000;
 

@@ -40,7 +40,8 @@ export default () => `
         </label>
       </div>
         <br>              
-        <input type="submit" class="btn" name="submit" value="Submit">
+        <button id="loginBtn" class="btn"
+        >Login !</button>
         <div id="status"></div>
     </form>
   </div>
