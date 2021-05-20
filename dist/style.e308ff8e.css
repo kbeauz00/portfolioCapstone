@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
@@ -47,7 +47,7 @@ img {
 }
 
 .navbar {
-  z-index: 10;
+  z-index: 100;
 }
 
 .navbar a {
@@ -106,6 +106,7 @@ img {
   height: 100vh;
   position: relative;
   color: #fff;
+  padding: 2% 0 0 0;
 }
 
 .hero::before {
@@ -148,6 +149,19 @@ img {
 }
 
 /* Contact */
+.contact input[type="text"],
+textarea,
+#e_mail {
+  display: flex;
+  width: 100%;
+  padding: 10px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 2px; /* Add a top margin */
+  margin-bottom: 5px; /* Bottom margin */
+  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
 .hero .contactContainer {
   display: flex;
@@ -156,6 +170,7 @@ img {
   justify-content: center;
   text-align: center;
   height: 100%;
+  line-height: 2.5;
 }
 
 .hero .contact h2 {
@@ -165,13 +180,6 @@ img {
   font-weight: 500;
 }
 
-.hero .contact p {
-  font-size: 20px;
-  max-width: 600px;
-  margin: 20px 0 30px;
-  font-weight: 400;
-}
-
 .hero .contact hr {
   overflow: visible;
   height: 30px;
@@ -179,10 +187,6 @@ img {
   border-color: #fff;
   border-width: 1px 0 0 0;
   border-radius: 20px;
-}
-
-a {
-  color: #fff;
 }
 
 /* about */
@@ -203,13 +207,6 @@ a {
   font-weight: 500;
 }
 
-.hero .about p {
-  font-size: 20px;
-  max-width: 600px;
-  margin: 20px 0 30px;
-  font-weight: 400;
-}
-
 .hero .about hr {
   overflow: visible;
   height: 30px;
@@ -217,6 +214,13 @@ a {
   border-color: #fff;
   border-width: 1px 0 0 0;
   border-radius: 20px;
+}
+
+.hero .about p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+  font-weight: 400;
 }
 
 /* login */
@@ -247,35 +251,44 @@ a {
 }
 
 .loginGroup {
-  width: 100%;
-  margin-top: 0px;
+  display: flex;
+  height: 100%;
+  line-height: 40px;
+  justify-content: space-between;
+  margin: 5px;
+  width: 93%;
 }
+
 .loginGroup input {
-  width: 100%;
-  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.loginGroup input[type="text"] {
+  display: flex;
+  margin-left: 15px;
+  line-height: 25px;
 }
 
 /* Register */
 
-.hero .register {
+.hero .registerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
-  padding: 100px;
-  line-height: 2.5;
+  height: 100%;
 }
 
-.hero .register h2 {
+.hero .CoachRegister h2 {
   font-size: 25px;
   max-width: 600px;
   margin: auto;
   font-weight: 500;
 }
 
-.hero .register hr {
+.hero .CoachRegister hr {
   overflow: visible;
   height: 30px;
   border-style: solid;
@@ -285,12 +298,115 @@ a {
   width: 100%;
 }
 
-.registerGroup {
+.CoachRegisterGroup {
+  display: flex;
+  height: 100%;
+  line-height: 40px;
+  justify-content: space-between;
+  margin: 5px 15px;
+  width: 93%;
+}
+
+.CoachRegister input {
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#coachRegisterUser {
+  margin-top: 20px;
+}
+
+#coachRegisterBtn {
+  margin-top: 10px;
+}
+
+/* PlayerRegistration */
+
+.hero .playerRegisterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.hero .playerRegister h2 {
+  font-size: 25px;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.hero .playerRegister hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.playerRegisterGroup {
+  display: flex;
+  height: 100%;
+  line-height: 40px;
+  justify-content: space-between;
+  margin: 5px 20px;
+  width: 93%;
+}
+
+.playerRegisterGroup input {
+  border-radius: 4px;
+}
+
+#PlayerRegisterBtn {
+  margin-top: 40px;
+}
+
+/* Player */
+
+.hero .playerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.hero .player h2 {
+  font-size: 25px;
+  max-width: 600px;
+  margin: auto;
+  font-weight: 500;
+}
+
+.hero .player hr {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.hero.tableGroup {
   display: flex;
   height: 30px;
   justify-content: space-between;
-  margin: 10px 15px;
-  width: 93%;
+  margin: 10px;
+  width: 20vh;
+}
+
+table,
+th,
+td {
+  background-color: rgb(36, 36, 36);
+  padding: 5px;
+  border: 1px solid #2b352d;
 }
 
 /* max-width 800px */
@@ -359,6 +475,52 @@ a {
     opacity: 0;
     pointer-events: none;
   }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.contactBlock,
+.contactBlockWide {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+}
+
+.contactBlock {
+  width: 48%;
+  margin: 0 1% 0 0;
+}
+
+.contactBlockWide {
+  width: 75%;
+}
+
+/* Footer */
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  color: rgb(238, 234, 234);
+  text-align: center;
 }
 
 

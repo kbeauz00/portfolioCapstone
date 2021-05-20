@@ -4,15 +4,32 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "colors": "^1.4.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.20",
+    "mongoose": "^5.11.9",
+    "mongoose-type-phone": "^1.0.1",
     "navigo": "^7.1.2",
-    "parcel-bundler": "^1.12.4"
+    "node": "^15.4.0",
+    "nodemon": "^2.0.6",
+    "parcel-bundler": "^1.12.4",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "parcel-build": "parcel build index.html && cp _redirects ./dist/",
-    "serve": "parcel index.html"
+    "serve": "parcel index.html",
+    "start": "nodemon --watch ./server -e js ./server/index.js"
   },
   "author": "",
   "license": "ISC"
